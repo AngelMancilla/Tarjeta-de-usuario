@@ -12,13 +12,13 @@
       <div class="header">
         <img
           class="img"
-          src="..\assets\header-img.jpg"
+          src="header-img.jpg"
           alt="Header de la tarjeta"
         />
       </div>
       <div class="avatar">
         <img
-          src="../assets\avatar.PNG"
+          src="avatar.PNG"
           alt="icono avatar"
           class="avatar-icon"
         />
@@ -47,18 +47,6 @@
             <button class="button-9" role="button">Follow me!</button> 
         </form>
       </div>
-      <div class="footer"></div>
     </div>
   </body>
-  <script>
-    $('form').on('submit',function(e){
-  e.preventDefault();
-  var but = $(this).find('[type="submit"]').toggleClass('sending').blur();
-  
-  setTimeout(function(){
-     but.removeClass('sending').blur();
-  },4500);
-  
-})
-  </script>
 </html>
