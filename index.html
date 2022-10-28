@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarjeta de usuario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tarjeta">
+      <div class="header">
+        <img
+          class="img"
+          src="..\assets\header-img.jpg"
+          alt="Header de la tarjeta"
+        />
+      </div>
+      <div class="avatar">
+        <img
+          src="../assets\avatar.PNG"
+          alt="icono avatar"
+          class="avatar-icon"
+        />
+      </div>
+      <div class="body">
+        <h2 style="margin-bottom: 0px; margin-top: 5px">
+          <center class="title">Angel :))</center>
+        </h2>
+        <div class="localizacion">
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path
+              fill="none"
+              d="M10,0.186c-3.427,0-6.204,2.778-6.204,6.204c0,5.471,6.204,6.806,6.204,13.424c0-6.618,6.204-7.953,6.204-13.424C16.204,2.964,13.427,0.186,10,0.186z M10,14.453c-0.66-1.125-1.462-2.076-2.219-2.974C6.36,9.797,5.239,8.469,5.239,6.39C5.239,3.764,7.374,1.63,10,1.63c2.625,0,4.761,2.135,4.761,4.761c0,2.078-1.121,3.407-2.541,5.089C11.462,12.377,10.66,13.328,10,14.453z"
+            ></path>
+            <circle fill="none" cx="10" cy="5.67" r="1.608"></circle>
+          </svg>
+          <h4 class="localizacion-text">Tijuana, Mexico</h4>
+        </div>
+        <p class="descripcion">
+          Angel es un desarrolador front end que disfruta programar con html,
+          css y Javascript. Le encantan los videojuegos y su saga favorita es The Legend of Zelda, todo lo relacionado al
+          terror y el misterio, y sobre todo aprender diariamente todo lo
+          relacionado al desarrollo web.
+        </p>
+        <form action="https://twitter.com/AngelCaritaHapy">
+            <button class="button-9" role="button">Follow me!</button> 
+        </form>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+  <script>
+    $('form').on('submit',function(e){
+  e.preventDefault();
+  var but = $(this).find('[type="submit"]').toggleClass('sending').blur();
+  
+  setTimeout(function(){
+     but.removeClass('sending').blur();
+  },4500);
+  
+})
+  </script>
+</html>
